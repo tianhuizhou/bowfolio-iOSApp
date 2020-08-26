@@ -41,6 +41,9 @@
                                 <state key="normal" title="Sign In | Sign Up">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3pg-Kp-5lx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bowfolios" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNz-F9-NjL">
                                 <rect key="frame" x="20" y="172" width="374" height="114"/>
@@ -73,6 +76,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="607-ET-wvW" id="Wyu-ja-sjL"/>
+                        <outlet property="passwordField" destination="bE6-LD-l3c" id="b4e-Nq-3s4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,7 +88,7 @@
         <!--View Controller-->
         <scene sceneID="LLP-Fh-LqT">
             <objects>
-                <viewController id="of5-qO-eG9" sceneMemberID="viewController">
+                <viewController id="of5-qO-eG9" customClass="ViewController" customModule="BowFolios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NcG-95-sb1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,13 +99,14 @@
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="NgN-TA-fav"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nAl-E3-h2g"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fMt-c0-A9H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="821" y="104"/>
+            <point key="canvasLocation" x="897" y="102"/>
         </scene>
     </scenes>
 </document>

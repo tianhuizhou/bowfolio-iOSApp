@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		C58D579324F6414A00FE01EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C58D579224F6414A00FE01EC /* Assets.xcassets */; };
 		C58D579624F6414A00FE01EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C58D579424F6414A00FE01EC /* LaunchScreen.storyboard */; };
 		C58D579E24F6468100FE01EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C58D579D24F6468000FE01EC /* GoogleService-Info.plist */; };
+		C5BBDE3B24F683F200412F43 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBDE3A24F683F200412F43 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C58D579524F6414A00FE01EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C58D579724F6414A00FE01EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C58D579D24F6468000FE01EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C5BBDE3A24F683F200412F43 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,6 @@
 				27A5C9A8BF5C71689BFD0478 /* Pods-BowFolios.debug.xcconfig */,
 				62BBCCCE98BD7FD20A9DCB13 /* Pods-BowFolios.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -86,6 +87,7 @@
 				C58D578924F6414800FE01EC /* AppDelegate.swift */,
 				C58D578B24F6414800FE01EC /* SceneDelegate.swift */,
 				C58D578D24F6414800FE01EC /* ViewController.swift */,
+				C5BBDE3A24F683F200412F43 /* HomeViewController.swift */,
 				C58D578F24F6414800FE01EC /* Main.storyboard */,
 				C58D579224F6414A00FE01EC /* Assets.xcassets */,
 				C58D579424F6414A00FE01EC /* LaunchScreen.storyboard */,
@@ -214,6 +216,7 @@
 				C58D578E24F6414800FE01EC /* ViewController.swift in Sources */,
 				C58D578A24F6414800FE01EC /* AppDelegate.swift in Sources */,
 				C58D578C24F6414800FE01EC /* SceneDelegate.swift in Sources */,
+				C5BBDE3B24F683F200412F43 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
