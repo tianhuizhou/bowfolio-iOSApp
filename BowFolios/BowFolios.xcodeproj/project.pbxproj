@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BE1E80B0593F709534F495B7 /* Pods_BowFolios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D93A5B5256168A90FD1D03 /* Pods_BowFolios.framework */; };
 		C521ECBC24F7BE89005428CA /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C521ECBB24F7BE89005428CA /* ProfileTableViewCell.swift */; };
+		C52BC3A924F83CEE00DC4030 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52BC3A824F83CED00DC4030 /* Profile.swift */; };
 		C58D578A24F6414800FE01EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D578924F6414800FE01EC /* AppDelegate.swift */; };
 		C58D578C24F6414800FE01EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D578B24F6414800FE01EC /* SceneDelegate.swift */; };
 		C58D578E24F6414800FE01EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D578D24F6414800FE01EC /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		62BBCCCE98BD7FD20A9DCB13 /* Pods-BowFolios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BowFolios.release.xcconfig"; path = "Target Support Files/Pods-BowFolios/Pods-BowFolios.release.xcconfig"; sourceTree = "<group>"; };
 		B8D93A5B5256168A90FD1D03 /* Pods_BowFolios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BowFolios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C521ECBB24F7BE89005428CA /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		C52BC3A824F83CED00DC4030 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		C58D578624F6414800FE01EC /* BowFolios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BowFolios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58D578924F6414800FE01EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C58D578B24F6414800FE01EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				C58D579424F6414A00FE01EC /* LaunchScreen.storyboard */,
 				C58D579724F6414A00FE01EC /* Info.plist */,
 				C58D579D24F6468000FE01EC /* GoogleService-Info.plist */,
+				C52BC3A824F83CED00DC4030 /* Profile.swift */,
 			);
 			path = BowFolios;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				C58D578E24F6414800FE01EC /* ViewController.swift in Sources */,
 				C5E7054724F79E1900EAE28A /* ProfileTableViewController.swift in Sources */,
 				C58D578A24F6414800FE01EC /* AppDelegate.swift in Sources */,
+				C52BC3A924F83CEE00DC4030 /* Profile.swift in Sources */,
 				C521ECBC24F7BE89005428CA /* ProfileTableViewCell.swift in Sources */,
 				C58D578C24F6414800FE01EC /* SceneDelegate.swift in Sources */,
 				C5BBDE3B24F683F200412F43 /* HomeViewController.swift in Sources */,

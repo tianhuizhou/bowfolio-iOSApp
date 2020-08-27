@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import FirebaseCore
-
+import FirebaseFirestore
 
 class HomeViewController: UIViewController {
 
@@ -32,7 +32,7 @@ class HomeViewController: UIViewController {
                 if document != nil && document!.exists {
                     
                     let documentData = document!.data()
-                    print("You got it!")
+                    
                     self.lableOne.text = documentData?["day"] as? String
                     self.labelTwo.text = documentData?["month"] as? String
                 }

@@ -9,7 +9,8 @@
 import UIKit
 
 class ProfileTableViewCell: UITableViewCell {
-
+    
+    //properties
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var discriptionLabel: UILabel!
     

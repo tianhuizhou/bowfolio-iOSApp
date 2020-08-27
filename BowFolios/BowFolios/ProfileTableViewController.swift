@@ -8,24 +8,75 @@
 
 import UIKit
 import Firebase
+import FirebaseFirestore
+
 
 class ProfileTableViewController: UITableViewController {
     
     var name = ""
     var discription = ""
     
+    
+    
+    
+    let db = Firestore.firestore()
+    
+    
+    
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
+        
+        
+        print("inside the viewdidload: \(self.name)")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
-        let db = Firestore.firestore()
+//        let db = Firestore.firestore()
+//
+//        db.collection("wine").document("tianhui").getDocument {(document, error) in
+//
+//            if error == nil {
+//
+//                if document != nil && document!.exists {
+//
+//                    let documentData = document!.data()
+//                    print("You got it!")
+//                    self.name = documentData?["day"] as! String
+//                    self.discription = documentData?["month"] as! String
+//                }
+//            }
+//        }
+    }
+
+    // MARK: - Table view data source
+
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 1
+    }
+
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        db.collection("wine").document("tianhui").getDocument {(document, error) in
+        let cellIdentifier = "ProfileTableViewCell"
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ProfileTableViewCell else {
+            fatalError("The dequeue cell is not an instance of ProfileTableViewCell")
+        }
+
+
+        // Configure the cell...
+        self.db.collection("wine").document("tianhui").getDocument {(document, error) in
             
             if error == nil {
                 
@@ -33,40 +84,19 @@ class ProfileTableViewController: UITableViewController {
                     
                     let documentData = document!.data()
                     print("You got it!")
-                    self.name = documentData?["day"] as! String
-                    self.discription = documentData?["month"] as! String
+                    cell.nameLabel.text = documentData?["day"] as? String
+                    cell.discriptionLabel.text = documentData?["month"] as? String
+                    
+                    
                 }
             }
         }
+        //cell.nameLabel.text = accessData()
+        //cell.discriptionLabel.text = accessData()
+
+
+        return cell
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
-    
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        
-//        let cellIdentifier = "ProfileTableViewCell"
-//        
-//        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ProfileTableViewCell else {
-//            fatalError("The dequeue cell is not an instance of ProfileTableViewCell")
-//        }
-//
-//        // Configure the cell...
-//        cell.nameLabel.text = name
-//        cell.discriptionLabel.text = discription
-//
-//        return cell
-//    }
     
 
     /*
@@ -113,5 +143,27 @@ class ProfileTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    // MARK: - helper
+    func accessData() -> String {
+        
+        var name1 = ""
+        var discription1 = ""
+        self.db.collection("wine").document("tianhui").getDocument {(document, error) in
+            
+            if error == nil {
+                
+                if document != nil && document!.exists {
+                    
+                    let documentData = document!.data()
+                    print("You got it!")
+                    name1 = documentData?["day"] as! String
+                    discription1 = documentData?["month"] as! String
+                    print(name1)
+                    
+                }
+            }
+        }
+        print(name1)
+        return name1
+    }
 }
