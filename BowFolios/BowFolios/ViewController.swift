@@ -11,7 +11,8 @@ import Firebase
 import FirebaseAuth
 import FirebaseCore
 
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailField: UITextField!
     
@@ -20,9 +21,29 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        //let db = Firestore.firestore()
+        
+        //adding data to cloud database
+        //adding these data to the collection with randomly generated DocumentID
+        //db.collection("profile").addDocument(data: ["name": "Bobby Zhou", "description":"I am the best Yasso in the world! Face the wind!"])
+        
+        //adding a document with a specific DocumentID or replace it
+        //db.collection("wine").document("tianhui").setData(["year": 1996, "month": 7, "day":14])
+        
+        self.emailField.delegate = self
+        self.passwordField.delegate = self
     }
 
     func textFieldDidEndEditing(_ textField: UITextField) {
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return (true)
     }
     
     @IBAction func signInTapped(_ sender: Any) {
@@ -33,8 +54,11 @@ class ViewController: UIViewController {
         Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
             if error == nil {
                 if user != nil {
-                   self.performSegue(withIdentifier: "homeSegue", sender: self)
+                    print("successfully log in with firebase")
+                   self.performSegue(withIdentifier: "gohomeSegue", sender: self)
                 }
+            } else {
+                print("Error, no such an account!")
             }
         })
     }

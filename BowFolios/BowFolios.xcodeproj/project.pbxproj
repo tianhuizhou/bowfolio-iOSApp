@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE1E80B0593F709534F495B7 /* Pods_BowFolios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D93A5B5256168A90FD1D03 /* Pods_BowFolios.framework */; };
+		C521ECBC24F7BE89005428CA /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C521ECBB24F7BE89005428CA /* ProfileTableViewCell.swift */; };
 		C58D578A24F6414800FE01EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D578924F6414800FE01EC /* AppDelegate.swift */; };
 		C58D578C24F6414800FE01EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D578B24F6414800FE01EC /* SceneDelegate.swift */; };
 		C58D578E24F6414800FE01EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D578D24F6414800FE01EC /* ViewController.swift */; };
@@ -16,12 +17,14 @@
 		C58D579624F6414A00FE01EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C58D579424F6414A00FE01EC /* LaunchScreen.storyboard */; };
 		C58D579E24F6468100FE01EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C58D579D24F6468000FE01EC /* GoogleService-Info.plist */; };
 		C5BBDE3B24F683F200412F43 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBDE3A24F683F200412F43 /* HomeViewController.swift */; };
+		C5E7054724F79E1900EAE28A /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E7054624F79E1900EAE28A /* ProfileTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27A5C9A8BF5C71689BFD0478 /* Pods-BowFolios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BowFolios.debug.xcconfig"; path = "Target Support Files/Pods-BowFolios/Pods-BowFolios.debug.xcconfig"; sourceTree = "<group>"; };
 		62BBCCCE98BD7FD20A9DCB13 /* Pods-BowFolios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BowFolios.release.xcconfig"; path = "Target Support Files/Pods-BowFolios/Pods-BowFolios.release.xcconfig"; sourceTree = "<group>"; };
 		B8D93A5B5256168A90FD1D03 /* Pods_BowFolios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BowFolios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C521ECBB24F7BE89005428CA /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		C58D578624F6414800FE01EC /* BowFolios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BowFolios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58D578924F6414800FE01EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C58D578B24F6414800FE01EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		C58D579724F6414A00FE01EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C58D579D24F6468000FE01EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C5BBDE3A24F683F200412F43 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C5E7054624F79E1900EAE28A /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 				C58D578B24F6414800FE01EC /* SceneDelegate.swift */,
 				C58D578D24F6414800FE01EC /* ViewController.swift */,
 				C5BBDE3A24F683F200412F43 /* HomeViewController.swift */,
+				C5E7054624F79E1900EAE28A /* ProfileTableViewController.swift */,
+				C521ECBB24F7BE89005428CA /* ProfileTableViewCell.swift */,
 				C58D578F24F6414800FE01EC /* Main.storyboard */,
 				C58D579224F6414A00FE01EC /* Assets.xcassets */,
 				C58D579424F6414A00FE01EC /* LaunchScreen.storyboard */,
@@ -214,7 +220,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C58D578E24F6414800FE01EC /* ViewController.swift in Sources */,
+				C5E7054724F79E1900EAE28A /* ProfileTableViewController.swift in Sources */,
 				C58D578A24F6414800FE01EC /* AppDelegate.swift in Sources */,
+				C521ECBC24F7BE89005428CA /* ProfileTableViewCell.swift in Sources */,
 				C58D578C24F6414800FE01EC /* SceneDelegate.swift in Sources */,
 				C5BBDE3B24F683F200412F43 /* HomeViewController.swift in Sources */,
 			);

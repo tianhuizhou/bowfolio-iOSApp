@@ -8,5 +8,6 @@ target 'BowFolios' do
   # Pods for BowFolios
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
 end
